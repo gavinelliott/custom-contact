@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Create custom contact rule</h1>
+
+      <form>
+        <fieldset>
+
+          <legend class="visuallyhidden">Rules</legend>
+
+          <label class="block-label" for="rule-1">
+            <input id="rule-1" name="enable-rule" type="checkbox" value="enable-rule">
+            Enable rule
+          </label>
+          <label class="block-label" for="rule-2">
+            <input id="rule-2" name="active-rule" type="checkbox" value="active-rule">
+            Active rule
+          </label>
+        </fieldset>
+      </form>
+
+      <h3 class="heading-small" style="color: #00823B;">Upload completed</h3>
+        <table>
+          <tbody>
+            <tr style="border-bottom: none!important;">
+              <td>4706500_prudential_contact.pdf</td>
+              <td class="numeric">0.10MB</td>
+            </tr>
+          </tbody>
+        </table>
+
+      <br/>
+      <form>
+        <fieldset>
+          <legend class="visuallyhidden">Choose file to upload</legend>
+          <a class="button" href="#" role="button">Choose file</a>
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+  <div class="grid-row" style="padding: 15px;">
+
+
+      <h2 class="heading-medium">241 Schemes matched, 3 did not</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">PSR Supplied</th>
+            <th scope="col">Name supplied</th>
+            <th scope="col">Registered name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10012512</td>
+            <td>Royal Bath &amp; West 1797</td>
+            <td>Royal Bath and West 1797</td>
+          </tr>
+          <tr>
+            <td>10012513</td>
+            <td>Royal Bath and Wet 1797</td>
+            <td>Royal Bath and West 1797</td>
+          </tr>
+          <tr>
+           <td>10012514</td>
+            <td>Royal Bath and West 1798</td>
+            <td>Royal Bath and West 1797</td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+			<h3 class="heading-small">Please add two or more of the following</h3>
+
+      <form>
+        <fieldset>
+
+          <legend class="visuallyhidden">Add two or more of the following</legend>
+
+          <div class="form-group">
+
+            <label class="block-label" data-target="contact-name" for="example-contact-by-address">
+              <input id="example-contact-by-address" type="checkbox" name="radio-contact-group" value="Yes">
+              Contact name and address
+            </label>
+            <div class="panel panel-border-narrow js-hidden" id="contact-name">
+              <label class="form-label" for="contact-name">Name</label>
+              <input class="form-control" name="contact-name" type="text" id="contact-name">
+              <br/>
+              <br/>
+              <label class="form-label" for="address-line-1">Line 1</label>
+              <input class="form-control" name="address-line-1" type="text" id="address-line-1">
+              <br/>
+              <br/>
+              <label class="form-label" for="address-line-2">Line 2</label>
+              <input class="form-control" name="address-line-2" type="text" id="address-line-2">
+              <br/>
+              <br/>
+              <label class="form-label" for="address-town">Town</label>
+              <input class="form-control" name="address-town" type="text" id="address-town">
+              <br/>
+              <br/>
+              <label class="form-label" for="address-postcode">Post code</label>
+              <input class="form-control" name="address-postcode" type="text" id="address-postcode">
+            </div>
+
+            <label class="block-label" data-target="contact-by-telephone" for="example-contact-by-telephone">
+              <input id="example-contact-by-telephone" type="checkbox" name="radio-contact-group" value="No">
+              Telephone number
+            </label>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-telephone">
+              <label class="form-label" for="contact-telephone">Telephone number</label>
+              <input class="form-control" name="contact-telephone" type="text" id="contact-telephone">
+            </div>
+
+            <label class="block-label" data-target="contact-email" for="example-contact-by-email">
+              <input id="example-contact-by-email" type="checkbox" name="radio-contact-group" value="No">
+              Email address
+            </label>
+            <div class="panel panel-border-narrow js-hidden" id="contact-email">
+              <label class="form-label" for="contact-email">Email address</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+            </div>
+
+            <label class="block-label" data-target="contact-url" for="example-contact-by-url">
+              <input id="example-contact-by-url" type="checkbox" name="radio-contact-group" value="No">
+              URL
+            </label>
+            <div class="panel panel-border-narrow js-hidden" id="contact-url">
+              <label class="form-label" for="contact-url">URL</label>
+              <input class="form-control" name="contact-url" type="text" id="contact-url">
+            </div>
+
+            <div class="form-group">
+              <h3 class="heading-small">Reason</h3>
+              <label class="form-label visuallyhidden" for="textarea-a">
+                Reason
+              </label>
+              <textarea class="form-controL" id="textarea-a" cols="50" rows="10"></textarea>
+            </div>
+
+
+
+          </div>
+
+        </fieldset>
+      </form>
+      <a class="button" href="#">Add rule</a>
+  </div>
+</main>
+
+{% endblock %}

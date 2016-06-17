@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Create custom contact rule</h1>
+
+      <!--<form>
+        <fieldset>
+
+          <legend class="visuallyhidden">Rules</legend>
+
+          <label class="block-label" for="rule-1">
+            <input id="rule-1" name="enable-rule" type="checkbox" value="enable-rule">
+            Enable rule
+          </label>
+          <label class="block-label" for="rule-2">
+            <input id="rule-2" name="active-rule" type="checkbox" value="active-rule">
+            Active rule
+          </label>
+        </fieldset>
+      </form>-->
+      <h3 class="heading-medium">Choose file to upload</h3>
+      <br/>
+      <form>
+        <fieldset>
+          <legend class="visuallyhidden">Choose file to upload</legend>
+          <a class="button" href="uploaded" role="button">Choose file</a>
+        </fieldset>
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
